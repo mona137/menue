@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            
+        padding-right:0px;
+        background-color:#050000;
+        width:100%;
+        padding:20px;
+        font-size: 20px;
+        font-family: iransansweb;
+        
+        }
+        p a{
+            text-decoration: none;
+            color:#21f900;
+            padding:20px;
+
+
+        }
+        p a:hover{
+            background-color: #00b318;
+            color:white;
+            
+        }
+       .active{ 
+            background-color: #00b318; 
+            color:white; 
+}
+    </style>
+</head>
+<body>
+
+<p id="demo">
+
+</p>
+<script>
+    const menue = ["product","news","about","home"];
+    function getlink(x){
+       
+        let text= "";
+        
+        
+        for(let i=0; i < x.length ; i++){
+           text += "<a href='https://digikala.com'>"+ x[i] +" "+"</a>";
+
+
+        }
+        return text;
+    }
+    document.getElementById("demo").innerHTML = getlink(menue);
+</script>
+</body>
+</html>
